@@ -4,7 +4,7 @@ This is a simple clipboard demo app using the [webnative sdk](https://github.com
 
 ## Try it
 
-You can give it a spin at: ...
+Give it a try at: https://cool-colossal-junior-monkey.fission.app/
 
 ## Quick Start
 
