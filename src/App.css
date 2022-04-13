@@ -1,0 +1,224 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+.center-in-view {
+  width: 80%;
+  max-width: 800px;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+  display: inline-block;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  background: #0b4c9a;
+}
+::selection {
+  background: #992942;
+}
+
+.link {
+  color: #645ad6;
+  transition: 0.1s;
+}
+.link:hover {
+  color: #4c44a5;
+}
+.link:active {
+  color: #7a6ffa;
+}
+
+.masthead {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8) 50%),
+    url(./assets/splash.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 15vh;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100vw;
+}
+.title {
+  color: #6236aa;
+  margin: 0;
+  font-family: "Fira Code", sans-serif;
+  font-size: 10vh;
+  letter-spacing: 0.03rem;
+  text-shadow: 0px 0px 50px black;
+  user-select: none;
+  position: relative;
+  top: 2vh;
+}
+.subtitle {
+  color: #ff8e04;
+  font-family: "Karla", sans-serif;
+  font-size: 7vh;
+  letter-spacing: 0.01rem;
+  position: relative;
+  top: -1.5vh;
+}
+
+.button-indigo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  outline: none;
+  background-color: #6236aa;
+  color: #f0eeff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.2s;
+  border: none;
+  height: auto;
+}
+.button-indigo:hover {
+  background-color: #362d5c;
+  color: #9a98a3;
+}
+.button-delete {
+  border-radius: 0 2px 2px 0;
+}
+.button-delete:hover {
+  background-color: #992942;
+}
+.button-pin {
+  border-radius: 2px 0 0 2px;
+  border-right: 2px solid #29292d;
+}
+.is-pinned {
+  background-color: #ff8e04;
+  color: black;
+}
+.is-pinned:hover {
+  background-color: #bd6902;
+}
+.button-add {
+  background-color: #333333;
+  color: #d9d7e6;
+  height: 5rem;
+  z-index: 1;
+}
+.button-add:hover {
+  background-color: #332a55;
+}
+.button-sign-out {
+  background-color: #992942;
+  color: #d9d7e6;
+  position: absolute;
+  top: 1vh;
+  right: 1vw;
+  border-radius: 8px;
+}
+.button-sign-out:hover {
+  background-color: #333333;
+}
+.button-sign-in {
+  font-size: 1.4rem;
+  margin: 2rem 0;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+.button-sign-in:hover {
+  background-color: #992942;
+  color: #f0eeff;
+  outline: 2px solid #bd6902;
+}
+
+ul {
+  list-style-type: none;
+  background-color: #18181a;
+  padding: 1rem;
+}
+.list-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+.list-item {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+  height: auto;
+}
+.content-container {
+  background-color: #29292d;
+  color: #d9d7e6;
+  display: flex;
+  padding: 5px 5px 3px 8px;
+  overflow-y: auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  flex-grow: 1;
+  min-height: 1.8rem;
+  max-height: 8rem;
+}
+.content-container:hover {
+  outline: 1px solid #657575;
+}
+.content {
+  min-width: 150px;
+  text-align: left;
+}
+
+.input-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.text-input {
+  font-family: "Karla", sans-serif;
+  font-size: 0.9rem;
+  padding: 0.75rem;
+  border-radius: 2px 0 0 2px;
+  background-color: #131315;
+  color: #d9d7e6;
+  border: none;
+  resize: none;
+  flex-grow: 1;
+  z-index: 2;
+}
+.text-input:focus {
+  outline: 3px solid #332a55;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #aaa8b4;
+}
+::-webkit-scrollbar-thumb {
+  background: #6d6e77;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d2d5e6;
+}
