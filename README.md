@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# fissionClip
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple clipboard demo app using the [webnative sdk](https://github.com/fission-suite/webnative) with React. You save small snippets of text (eg: links, memos) to persist them across your devices.
 
-## Available Scripts
+## Try it
 
-In the project directory, you can run:
+You can give it a spin at: ...
 
-### `npm start`
+## Quick Start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To run locally:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```sh
+# Install dependencies.
+npm install
 
-### `npm test`
+# Run the server
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The app will then be available at [http://localhost:3000](http://localhost:3000)
 
-### `npm run build`
+## Build
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Build the application.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```shell
+npm run build
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The build will be in `build`.
 
-### `npm run eject`
+## Publish
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+You can publish your own version of this app with Fission! [Install the Fission CLI](https://guide.fission.codes/developers/installation) if you haven't already. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Build the application before the following steps.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Delete `fission.yaml` and then register your own subdomain.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```shell
+fission app register
+```
 
-## Learn More
+The CLI should prompt you with the appropriate build directory.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Publish the app.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```shell
+fission app publish
+```
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Your version of the app is now live!
